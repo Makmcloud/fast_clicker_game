@@ -57,9 +57,8 @@ class Game:
     
     def run(self):
         while self.running:
-            self.scene.fill(self.settings.bg_color)
             self.handle_events()
-            self.clock.tick(self.settings.fps)
+            self.scene.fill(self.settings.bg_color)
             for rectangle in self.rectangles:
                 rectangle.draw_rect(self.scene)
                 rectangle.draw_borders(self.scene, color='black')
@@ -80,8 +79,9 @@ class Game:
                 self.start_time = time()
             self.score_text.set_text(f'Очки:{self.score}')
             self.score_text.add_text(self.scene)
+            self.clock.tick(self.settings.fps)
             pygame.display.update()
-
+            
 if __name__ == "__main__":
     game = Game()
     game.run()
