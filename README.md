@@ -32,4 +32,3 @@ pip install -r requirements.txt
 cd fast_clicker
 python3 fast_clicker.py
 ```
-Напишите что-нибудь
