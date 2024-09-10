@@ -27,9 +27,9 @@ venv\Scripts\activate.bat
 ```
 pip install -r requirements.txt
 ```
-- Запустите файл main.py
+- Запустите файл fast_clicker.py
 ```
-cd old_tank_game
+cd fast_clicker
 python3 fast_clicker.py
 ```
 Напишите что-нибудь
